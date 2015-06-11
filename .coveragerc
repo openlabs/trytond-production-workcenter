@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.production_workcenter
+
+[report]
+omit = */tests/*, */setup.py, */fabfile.py, */dashboard.py

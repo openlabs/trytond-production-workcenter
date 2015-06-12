@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="work_center_view_tree">
+            <field name="model">production.work_center</field>
+            <field name="type">tree</field>
+            <field name="name">work_center_tree</field>
+        </record>
+        <record model="ir.ui.view" id="work_center_view_form">
+            <field name="model">production.work_center</field>
+            <field name="type">form</field>
+            <field name="name">work_center_form</field>
+        </record>
+        <record model="ir.action.act_window" id="act_work_center_form">
+            <field name="name">Work Centers</field>
+            <field name="res_model">production.work_center</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_work_center_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="work_center_view_tree"/>
+            <field name="act_window" ref="act_work_center_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_work_center_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="work_center_view_form"/>
+            <field name="act_window" ref="act_work_center_form"/>
+        </record>
+        <menuitem name="Work Center" parent="production.menu_production" sequence="30"
+            id="menu_work_center" action="act_work_center_form"/>
+
+        <record model="ir.ui.view" id="work_center_type_view_tree">
+            <field name="model">production.work_center.type</field>
+            <field name="type">tree</field>
+            <field name="name">work_center_type_tree</field>
+        </record>
+        <record model="ir.ui.view" id="work_center_type_view_form">
+            <field name="model">production.work_center.type</field>
+            <field name="type">form</field>
+            <field name="name">work_center_type_form</field>
+        </record>
+        <record model="ir.action.act_window" id="act_work_center_type_form">
+            <field name="name">Work Center Types</field>
+            <field name="res_model">production.work_center.type</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_work_center_type_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="work_center_type_view_tree"/>
+            <field name="act_window" ref="act_work_center_type_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_work_center_type_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="work_center_type_view_form"/>
+            <field name="act_window" ref="act_work_center_type_form"/>
+        </record>
+        <menuitem name="Work Center Type" parent="menu_work_center" id="menu_work_center_type"
+            action="act_work_center_type_form" sequence="40"/>
+    </data>
+</tryton>

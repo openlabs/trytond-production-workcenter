@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<tree string="Work Centers">
+    <field name="name"/>
+    <field name="work_center_type"/>
+</tree>

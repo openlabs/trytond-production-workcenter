@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<form string="Work Center" col="6">
+    <label name="name"/>
+    <field name="name"/>
+    <label name="work_center_type"/>
+    <field name="work_center_type"/>
+    <label name="active"/>
+    <field name="active"/>    
+</form>

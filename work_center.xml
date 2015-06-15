@@ -25,7 +25,7 @@
             <field name="view" ref="work_center_view_form"/>
             <field name="act_window" ref="act_work_center_form"/>
         </record>
-        <menuitem name="Work Center" parent="production.menu_production" sequence="30"
+        <menuitem name="Work Center" parent="production.menu_configuration" sequence="30"
             id="menu_work_center" action="act_work_center_form"/>
 
         <record model="ir.ui.view" id="work_center_type_view_tree">
